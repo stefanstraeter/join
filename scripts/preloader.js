@@ -26,7 +26,7 @@ function startAnimation() {
 function handleMobileLogo(logo) {
     if (window.innerWidth <= 767) {
         setTimeout(() => {
-            logo.src = "../assets/img/shared/join-logo-blue.svg";
+            logo.src = "/assets/img/shared/join-logo-blue.svg";
         }, 390);
     }
 }
