@@ -6,6 +6,10 @@
 
 The technical value of the project lies in the fact that it was implemented **without a frontend framework**. Core application concerns such as rendering, state handling, overlays, form workflows, navigation, and data synchronization are solved directly in the browser. This makes Join a strong demonstration of fundamental frontend engineering, architectural thinking, and maintainable JavaScript organization.
 
+### Preview
+
+![Join Preview](assets/img/join-mockup.png)
+
 ### Live Demo
 
 - **Link:** [View Live Project](https://stefanstraeter.github.io/join/)
