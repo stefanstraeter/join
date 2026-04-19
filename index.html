@@ -3,42 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
-    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" />
 
     <title>Join</title>
 
-    <link rel="stylesheet" href="../styles/base/reset.css" />
-    <link rel="stylesheet" href="../styles/preloader.css" />
-    <link rel="stylesheet" href="../styles/base/fonts.css" />
-    <link rel="stylesheet" href="../styles/base/variables.css" />
-    <link rel="stylesheet" href="../styles/base/transitions.css" />
-    <link rel="stylesheet" href="../styles/components.css" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../styles/auth.css" />
+    <link rel="stylesheet" href="./styles/base/reset.css" />
+    <link rel="stylesheet" href="./styles/preloader.css" />
+    <link rel="stylesheet" href="./styles/base/fonts.css" />
+    <link rel="stylesheet" href="./styles/base/variables.css" />
+    <link rel="stylesheet" href="./styles/base/transitions.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/auth.css" />
 
-    <script src="../scripts/firebase.js" defer></script>
-    <script src="../scripts/dataStore.js" defer></script>
-    <script src="../scripts/preloader.js" defer></script>
-    <script src="../scripts/authUtilities.js" defer></script>
-    <script src="../scripts/authLogin.js" defer></script>
-    <script src="../scripts/authSignup.js" defer></script>
+    <script src="./scripts/firebase.js" defer></script>
+    <script src="./scripts/dataStore.js" defer></script>
+    <script src="./scripts/preloader.js" defer></script>
+    <script src="./scripts/authUtilities.js" defer></script>
+    <script src="./scripts/authLogin.js" defer></script>
+    <script src="./scripts/authSignup.js" defer></script>
   </head>
 
   <body class="auth-page auth-content-limit">
     <!-- preloader -->
     <div id="preloader" class="preloader">
       <picture>
-        <source media="(min-width: 768px)" srcset="../assets/img/shared/join-logo-blue.svg" />
+        <source media="(min-width: 768px)" srcset="./assets/img/shared/join-logo-blue.svg" />
 
-        <img id="animatingLogo" src="/assets/img/shared/join-logo-white.svg" class="animating-logo" loading="eager" alt="Join Logo" />
+        <img id="animatingLogo" src="./assets/img/shared/join-logo-white.svg" class="animating-logo" loading="eager" alt="Join Logo" />
       </picture>
     </div>
 
     <header class="auth-header">
-      <a href="/index.html">
-        <img id="headerLogoFinal" class="auth-header__logo header-logo-hidden" loading="eager" src="/assets/img/shared/join-logo-blue.svg" alt="Join Logo" />
+      <a href="./index.html">
+        <img id="headerLogoFinal" class="auth-header__logo header-logo-hidden" loading="eager" src="./assets/img/shared/join-logo-blue.svg" alt="Join Logo" />
       </a>
       <div class="auth-signup-group desktop-only">
         <p class="auth-signup-group__text">Not a Join user?</p>
@@ -60,7 +60,7 @@
               <div class="auth-card__input-wrapper">
                 <div id="loginEmailGroup" class="auth-card__input-group">
                   <input type="email" id="loginEmail" class="auth-card__input" placeholder="Email" />
-                  <img class="auth-card__icon" src="/assets/img/auth/mail-default.svg" alt="" />
+                  <img class="auth-card__icon" src="./assets/img/auth/mail-default.svg" alt="" />
                 </div>
                 <div class="error-placeholder"></div>
               </div>
@@ -68,7 +68,7 @@
               <div class="auth-card__input-wrapper">
                 <div id="loginPasswordGroup" class="auth-card__input-group">
                   <input type="password" id="loginPassword" class="auth-card__input" placeholder="Password" />
-                  <img id="loginPasswordIcon" class="auth-card__icon" src="/assets/img/auth/lock-default.svg" alt="" />
+                  <img id="loginPasswordIcon" class="auth-card__icon" src="./assets/img/auth/lock-default.svg" alt="" />
                 </div>
                 <div id="loginErrorMessage" class="error-placeholder"></div>
               </div>
@@ -86,13 +86,13 @@
               <div class="auth-card__header">
                 <h2 class="auth-card__title">Sign Up</h2>
                 <div class="separator--h separator--blue"></div>
-                <img id="toLogin" class="auth-card__arrow" src="/assets/img/shared/arrow-left-default.svg" alt="" />
+                <img id="toLogin" class="auth-card__arrow" src="./assets/img/shared/arrow-left-default.svg" alt="" />
               </div>
 
               <div class="auth-card__input-wrapper">
                 <div id="signUpNameGroup" class="auth-card__input-group">
                   <input type="text" id="signupName" class="auth-card__input" placeholder="Name" />
-                  <img class="auth-card__icon" src="/assets/img/auth/person-default.svg" alt="" />
+                  <img class="auth-card__icon" src="./assets/img/auth/person-default.svg" alt="" />
                 </div>
                 <div id="signupNameError" class="error-placeholder"></div>
               </div>
@@ -100,7 +100,7 @@
               <div class="auth-card__input-wrapper">
                 <div id="signEmailGroup" class="auth-card__input-group">
                   <input type="email" id="signupEmail" class="auth-card__input" placeholder="Email" />
-                  <img class="auth-card__icon" src="/assets/img/auth/mail-default.svg" alt="" />
+                  <img class="auth-card__icon" src="./assets/img/auth/mail-default.svg" alt="" />
                 </div>
                 <div id="signupEmailError" class="error-placeholder"></div>
               </div>
@@ -108,7 +108,7 @@
               <div class="auth-card__input-wrapper">
                 <div id="signupPasswordGroup" class="auth-card__input-group">
                   <input type="password" id="signupPassword" class="auth-card__input" placeholder="Password" />
-                  <img id="signupPasswordIcon" class="auth-card__icon" src="/assets/img/auth/lock-default.svg" alt="" />
+                  <img id="signupPasswordIcon" class="auth-card__icon" src="./assets/img/auth/lock-default.svg" alt="" />
                 </div>
                 <div id="signupPasswordError" class="error-placeholder"></div>
               </div>
@@ -116,7 +116,7 @@
               <div class="auth-card__input-wrapper">
                 <div id="signupConfirmGroup" class="auth-card__input-group">
                   <input type="password" id="signupConfirmPassword" class="auth-card__input" placeholder="Confirm Password" />
-                  <img id="signupConfirmIcon" class="auth-card__icon" src="/assets/img/auth/lock-default.svg" alt="" />
+                  <img id="signupConfirmIcon" class="auth-card__icon" src="./assets/img/auth/lock-default.svg" alt="" />
                 </div>
                 <div id="signupConfirmError" class="error-placeholder"></div>
               </div>
