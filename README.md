@@ -28,9 +28,11 @@ Manage tasks, track progress, and organize workflows directly in the browser –
 
 ## Purpose
 
-This project was built to demonstrate how a complex frontend application can be implemented without using frameworks like React or Vue.
+This project was developed as part of a frontend training program at the Developer Akademie.
 
-It focuses on:
+It demonstrates how a complex web application can be built without relying on frameworks like React or Vue.
+
+Focus areas include:
 
 - manual state management across multiple pages
 - modular JavaScript architecture
@@ -43,7 +45,7 @@ It focuses on:
 
 Clone the repository:
 
-```
+```id="k3l9ds"
 git clone <repository-url>
 cd join
 ```
@@ -66,7 +68,7 @@ Run the project using a local development server (e.g. VS Code Live Server).
 
 ## Project Structure
 
-```
+```id="t92kls"
 index.html
 html/
 scripts/
